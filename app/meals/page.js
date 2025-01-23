@@ -1,11 +1,14 @@
-import Link from "next/link";
+import MealsHeader from "@/components/meals-header/meals-header";
+import classes from "./page.module.css";
+import MealsGrid from "@/components/meals/meals-grid";
 
 export default function MealsPage() {
   return (
-    <main>
-      <h1>This is the Meals page</h1>
-      <p><Link href='/meals/share'>Share</Link></p>
-    </main>
-
+    <>
+      <MealsHeader />
+      <main className={classes.main}>
+        <MealsGrid meals={[]} />
+      </main>
+    </>
   );
 }
