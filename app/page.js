@@ -1,3 +1,5 @@
+import Header from "@/components/main-header/page";
+
 export default function HomePage() {
   return (
     <div id="home">
