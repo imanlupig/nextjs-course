@@ -1,6 +1,12 @@
-export default function EventsSlug(){
+import { useRouter } from "next/router";
+
+export default function FilteredEvents() {
+  const router = useRouter();
+  console.log(router.query)
+
   return (
-   <h1>Events Slugs
-   </h1>
-  )
+    <div>
+      <h1>Filtered Events</h1>
+    </div>
+  );
 }
