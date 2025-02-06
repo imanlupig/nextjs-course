@@ -1,4 +1,5 @@
 import EventList from "@/components/events/event-list";
+import EventSearch from "@/components/events/events-search";
 import { getAllEvents } from "@/dummy-data";
 
 export default function EventsPage() {
@@ -6,7 +7,7 @@ export default function EventsPage() {
 
   return (
     <div>
-      <h1> All Events</h1>
+      <EventSearch/>
       <EventList items={events} />
     </div>
   );
